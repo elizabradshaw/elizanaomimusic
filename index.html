@@ -493,6 +493,54 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    document.querySelector('.php-email-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      const form = this;
+      const formData = new FormData(form);
+      const submitButton = form.querySelector('button[type="submit"]');
+      const sentMessage = form.querySelector('.sent-message');
+      const errorMessage = form.querySelector('.error-message');
+      const loading = form.querySelector('.loading');
+  
+      submitButton.disabled = true;
+      loading.style.display = 'block';
+  
+      fetch('https://formspree.io/f/myyalpzb', {
+        method: 'POST',
+        body: formData,
+      })
+        .then(function(response) {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error('Failed to submit form');
+          }
+        })
+        .then(function(json) {
+          loading.style.display = 'none';
+          sentMessage.style.display = 'block';
+          form.reset();
+          setTimeout(function() {
+            sentMessage.style.display = 'none';
+          }, 5000);
+        })
+        .catch(function(error) {
+          loading.style.display = 'none';
+          errorMessage.textContent = error.message;
+          errorMessage.style.display = 'block';
+          setTimeout(function() {
+            errorMessage.style.display = 'none';
+          }, 5000);
+        })
+        .finally(function() {
+          submitButton.disabled = false;
+        });
+    });
+  </script>
+  
+
 </body>
 
 </html>
