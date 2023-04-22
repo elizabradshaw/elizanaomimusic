@@ -519,11 +519,15 @@
         })
         .then(function(json) {
           loading.style.display = 'none';
-          sentMessage.style.display = 'block';
-          form.reset();
-          setTimeout(function() {
-            sentMessage.style.display = 'none';
-          }, 5000);
+          if (json.ok) {
+            sentMessage.style.display = 'block';
+            form.reset();
+            setTimeout(function() {
+              sentMessage.style.display = 'none';
+            }, 5000);
+          } else {
+            throw new Error('Failed to submit form');
+          }
         })
         .catch(function(error) {
           loading.style.display = 'none';
@@ -538,6 +542,7 @@
         });
     });
   </script>
+  
   
 
 </body>
