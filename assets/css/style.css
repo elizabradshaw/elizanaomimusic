@@ -294,7 +294,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -331,37 +331,37 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# studio
 --------------------------------------------------------------*/
-.about .content h3 {
+.studio .content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #173b6c;
 }
 
-.about .content ul {
+.studio .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.studio .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
-.about .content ul strong {
+.studio .content ul strong {
   margin-right: 10px;
 }
 
-.about .content ul i {
+.studio .content ul i {
   font-size: 16px;
   margin-right: 5px;
   color: #149ddd;
   line-height: 0;
 }
 
-.about .content p:last-child {
+.studio .content p:last-child {
   margin-bottom: 0;
 }
 
