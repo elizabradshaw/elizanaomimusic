@@ -164,81 +164,31 @@
 <button id="openModal" style="padding: 10px 20px; background-color: #039be5; color: white; border: none; border-radius: 5px; cursor: pointer;">Sign Up To Get Updates on My Music</button>
 
 <!-- Modal Structure -->
-<div id="formModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.2); padding: 20px; z-index: 1000;">
-  <button id="closeModal" style="float: right; background: transparent; border: none; font-size: 20px; cursor: pointer;">&times;</button>
-  
-  <!-- Embedded Form -->
-  <div id="mc_embed_shell">
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-        #mc_embed_signup { background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width: 100%; }
-    </style>
-    <div id="mc_embed_signup">
-      <form action="https://elizanaomimusic.us14.list-manage.com/subscribe/post?u=c9225cddd8b962591d3df0c8c&amp;id=a7befcdc89&amp;f_id=00a8c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-        <div id="mc_embed_signup_scroll">
-          <h2>Hear about upcoming events and music ◡̈</h2>
-          <div class="mc-field-group">
-            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
-          </div>
-          <div class="mc-field-group">
-            <label for="mce-FNAME">First Name</label>
-            <input type="text" name="FNAME" id="mce-FNAME">
-          </div>
-          <div class="mc-field-group">
-            <label for="mce-LNAME">Last Name</label>
-            <input type="text" name="LNAME" id="mce-LNAME">
-          </div>
-          <div id="mce-responses" class="clear foot">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>
-          <div class="clear foot">
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
+<div id="formModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 700px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 1000;">
+  <button id="closeModal" style="float: right; background: transparent; border: none; font-size: 24px; padding: 10px; cursor: pointer;">&times;</button>
+  <iframe src="https://mailchi.mp/752e50a7083e/landing-page" style="width: 100%; height: 600px; border: none;"></iframe>
 </div>
 
 <!-- Overlay -->
 <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999;"></div>
 
+<script>
+  document.getElementById('openModal').addEventListener('click', function() {
+    document.getElementById('formModal').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+  });
 
+  document.getElementById('closeModal').addEventListener('click', function() {
+    document.getElementById('formModal').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+  });
 
+  document.getElementById('overlay').addEventListener('click', function() {
+    document.getElementById('formModal').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+  });
+</script>
 
-
-<!-- Link to CSS for button styling -->
-<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-
-<!-- Custom Button HTML -->
-<!-- <button onclick="window.open('https://mailchi.mp/e0cf87592201/newsletter', '_blank')" class="custom-button">
-    Click to Subscribe to Newsletter!
-</button> -->
-
-<!-- Custom Button CSS -->
-<style>
-    /* Customize this part to adjust the button appearance */
-    .custom-button {
-        background-color: #039be5; /* Matches the color in your script */
-        color: white; /* Text color */
-        padding: 12px 20px; /* Padding for size */
-        font-size: 16px; /* Font size */
-        border: none;
-        border-radius: 4px; /* Rounded corners */
-        cursor: pointer;
-        text-align: center;
-        display: inline-block;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
-
-    /* Hover effect */
-    .custom-button:hover {
-        background-color: #0277bd; /* Slightly darker blue on hover */
-    }
-</style>
 
 
   </div>
