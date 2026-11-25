@@ -102,7 +102,14 @@
       }
       /* Longer hero heading needs a smaller size */
       #hero h1 {
-        font-size: clamp(30px, 6vw, 56px);
+        font-size: clamp(30px, 4vw, 56px);
+      }
+      /* On desktop the sidebar is fixed (300px wide), so center the hero text in the space beside it */
+      @media (min-width: 1200px) {
+        #hero {
+          padding-left: 300px;
+          box-sizing: border-box;
+        }
       }
     </style>
   </head>
@@ -518,3 +525,4 @@
 </body>
 
 </html>
+
