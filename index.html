@@ -3,7 +3,7 @@
 
   <head>
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/c9225cddd8b962591d3df0c8c/b0a3be5fec8fa27767ac13bb2.js");</script>
-  
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-16V2LW2ZNJ"></script>
     <script>
@@ -12,24 +12,31 @@
       gtag('js', new Date());
       gtag('config', 'G-16V2LW2ZNJ');
     </script>
-  
+
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
-    <title>Eliza Naomi Music</title>
-    <meta name="keywords" content="Music, Eugene, Oregon, lessons">
-    <meta name="description" content="Eliza Naomi's Website on all things music">
+
+    <title>Cello, Guitar, Ukulele &amp; Songwriting Lessons in Eugene, OR | Eliza Naomi Music</title>
+    <meta name="description" content="Private cello, guitar, ukulele, piano, and singing/songwriting lessons in Eugene, Oregon and online. Patient, creative teaching for teens and adults. Book a free consultation.">
+    <meta name="keywords" content="cello lessons Eugene, guitar lessons Eugene, ukulele lessons Eugene, songwriting lessons Eugene, music lessons Eugene Oregon">
     <meta name="author" content="Eliza Naomi">
-  
+    <link rel="canonical" href="https://elizanaomimusic.com/">
+
+    <!-- Social sharing -->
+    <meta property="og:title" content="Music Lessons in Eugene, Oregon | Eliza Naomi Music">
+    <meta property="og:description" content="Private cello, guitar, ukulele, piano, and singing/songwriting lessons in Eugene, Oregon and online.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elizanaomimusic.com/">
+
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet">
-  
+
     <!-- Mailchimp Embedded Form Styles -->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     <style type="text/css">
@@ -65,7 +72,7 @@
         background-color: #0277bd;
       }
     </style>
-  
+
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -73,11 +80,33 @@
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  
+
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Small overrides (must come after style.css) -->
+    <style type="text/css">
+      /* Sidebar name is no longer an h1, so give it the same look */
+      #header .profile .site-name {
+        font-size: 24px;
+        margin: 15px 0 0 0;
+        padding: 0;
+        font-weight: 600;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+      }
+      #header .profile .site-name a,
+      #header .profile .site-name a:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+      /* Longer hero heading needs a smaller size */
+      #hero h1 {
+        font-size: clamp(30px, 6vw, 56px);
+      }
+    </style>
   </head>
-  
+
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
@@ -88,14 +117,14 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Eliza Naomi Music</a></h1>
+        <img src="assets/img/profile-img.jpg" alt="Eliza Naomi, music teacher in Eugene, Oregon" class="img-fluid rounded-circle">
+        <div class="site-name text-light"><a href="index.html">Eliza Naomi Music</a></div>
         <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/elizanaomimusic" class="facebook" target="_blank"><i
+          <a href="https://www.facebook.com/elizanaomimusic" class="facebook" target="_blank" aria-label="Facebook"><i
               class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/elizanaomimusic/" class="instagram" target="_blank"><i
+          <a href="https://www.instagram.com/elizanaomimusic/" class="instagram" target="_blank" aria-label="Instagram"><i
               class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/elizabradshaw/" class="linkedin" target="_blank"><i
+          <a href="https://www.linkedin.com/in/elizabradshaw/" class="linkedin" target="_blank" aria-label="LinkedIn"><i
               class="bx bxl-linkedin"></i></a>
         </div>
       </div>
@@ -103,13 +132,10 @@
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-                    <li><a href="#music" class="nav-link scrollto"><i class="bi bi-music-note-beamed"></i> <span>Music</span></a></li>
-          <li><a href="#studio" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Studio</span></a></li>
-          <li><a href="#recitals" class="nav-link scrollto"><i class="bx bx-microphone"></i> <span>Recitals</span></a></li>
-
+          <li><a href="#studio" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Lessons</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Gallery</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Gallery</span></a>
-          </li>
+          <li><a href="#music" class="nav-link scrollto"><i class="bi bi-music-note-beamed"></i> <span>My Music</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -118,8 +144,8 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Eliza Naomi</h1>
-      <p><span class="typed" data-typed-items="Musician, Teacher, Artist, Creative"></span></p>
+      <h1>Music Lessons in Eugene, Oregon</h1>
+      <p><span class="typed" data-typed-items="Cello, Guitar, Ukulele, Piano, Singing &amp; Songwriting">Cello, Guitar, Ukulele, Piano, Singing &amp; Songwriting</span></p>
     </div>
   </section>
   <!-- End Hero -->
@@ -130,156 +156,140 @@
     <link href="elizanaomimusic/assets/css/style.css" rel="stylesheet">
 
 
-
-
-<!-- ======= Music Section ======= -->
-<section id="music" class="music">
-  <div class="container">
-    <div class="row">
-      <!-- Image Column -->
-      <div class="col-lg-4" data-aos="fade-right">
-        <img src="assets/img/band.png" class="img-fluid" alt="Band Image">
-      </div>
-
-      <!-- Content Column -->
-      <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-        <div class="section-title">
-          <h2>About</h2>
-          <p>
-            I’m an indie pop singer, songwriter, and multi instrumentalist based in Eugene, Oregon. I teach music and make music.  
-          </p>
-
-
-        <p>
-One of my projects is Oregon Honeycomb, a trio featuring Hannah Sophia, Noah Tretter, and Eliza Naomi. Check out our latest single here:
-         </p>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0l5MJ68oXH0YKEzHM1rba8?utm_source=generator" width="100%" height="80" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        <p class="fst-italic mt-3">
-
-        </p>
-
-<!-- Trigger Button -->
-<button id="openModal" style="padding: 10px 20px; background-color: #039be5; color: white; border: none; border-radius: 5px; cursor: pointer;">Sign Up To Get Updates on My Music</button>
-
-<!-- Modal Structure -->
-<div id="formModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 700px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 1000;">
-  <button id="closeModal" style="float: right; background: transparent; border: none; font-size: 24px; padding: 10px; cursor: pointer;">&times;</button>
-  <iframe src="https://mailchi.mp/752e50a7083e/landing-page" style="width: 100%; height: 600px; border: none;"></iframe>
-</div>
-
-<!-- Overlay -->
-<div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999;"></div>
-
-<script>
-  document.getElementById('openModal').addEventListener('click', function() {
-    document.getElementById('formModal').style.display = 'block';
-    document.getElementById('overlay').style.display = 'block';
-  });
-
-  document.getElementById('closeModal').addEventListener('click', function() {
-    document.getElementById('formModal').style.display = 'none';
-    document.getElementById('overlay').style.display = 'none';
-  });
-
-  document.getElementById('overlay').addEventListener('click', function() {
-    document.getElementById('formModal').style.display = 'none';
-    document.getElementById('overlay').style.display = 'none';
-  });
-</script>
-
-
-
-  </div>
-</section>
-<!-- End Music Section -->
-
-
-    <!-- ======= Studio Section ======= -->
+    <!-- ======= Lessons Section ======= -->
     <section id="studio" class="studio">
       <div class="container">
         <div class="section-title">
-          <h2>Teaching</h2>
+          <h2>Lessons in Eugene, Oregon</h2>
           <p>
-            I received a degree from Utah State University and have been teaching lessons on and off since 2014. I teach beginner singing/songwriting, cello, ukulele, guitar, and keyboard lessons. Many of my students end up studying several of these topics simultaneously. <br><br>
+            I'm a teaching artist in Eugene, Oregon. I teach cello, guitar, ukulele, piano/keyboard, and beginner singing/songwriting lessons, in person at my home studio or online. Many of my students end up studying several of these at once. I received a degree from Utah State University and have been teaching lessons on and off since 2014. <br><br>
 
             I value authenticity over polished perfection. Music is a place to experiment, feel, and find yourself. Lessons are about growth and curiosity, not pressure or comparison.
           </p>
-
-
-
         </div>
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Eliza Naomi, cello, guitar, and ukulele teacher in Eugene, Oregon">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
 
-
-
             <h3>My Studio</h3>
             <p class="fst-italic">
-              <strong>All of my knowledge is available to my students</strong> I teach cello, singing/songwriting, ukulele, guitar, and keyboard lessons. Many of my students end up studying several of these topics simultaneously. <br><br>
-              <strong>I’m experienced with all ages</strong> But I currently focus on students ages 10 and older, especially teens and adults. I've taught over 200 group music classes and countless private lessons, customizing each lesson to suit individual learning needs.<br><br>
-              <strong>Location is flexible</strong>. Whether you prefer the convenience of online lessons, or the focused environment of my home studio in Eugene Oregon, I am happy to accommodate your needs.<br><br>
-              <strong>I create a safe and inclusive environment</strong>  My teaching is patient and gentle, with the focus on joy. Discounts and flexible scheduling options are available for BIPOC, queer, and low income students. 
-              
+              <strong>All of my knowledge is available to my students.</strong> Learn one instrument or mix a few, and we'll build lessons around what you want to play, sing, or write. <br><br>
+              <strong>I'm experienced with all ages.</strong> I currently focus on students ages 10 and older, especially teens and adults. I've taught over 200 group music classes and countless private lessons, customizing each lesson to suit individual learning needs.<br><br>
+              <strong>Location is flexible.</strong> Choose online lessons for convenience, or in-person lessons in the focused environment of my home studio in Eugene, Oregon.<br><br>
+              <strong>I create a safe and inclusive environment.</strong> My teaching is patient and gentle, with the focus on joy. Discounts and flexible scheduling options are available for BIPOC, queer, and low income students.<br><br>
+              <strong>Not sure where to start?</strong> <a href="#contact">Book a free consultation</a> and we'll talk about your goals, scheduling, and pricing.
+            </p>
+
             <!-- <h3>Pricing</h3>
             <p class="fst-italic">
-                         You can read more about my pricing here including exceptions <a href="https://docs.google.com/document/d/1H6qdunomCo0WBUsJqI4x_UGn3TJmO5wwQZHbnDe-PNI/edit?usp=sharing" target="_blank">studio policies here</a>. <br><br> 
-             30-minute lesson: $40<br> 45-minute lesson: $60<br> 60-minute lesson: $80 <br>  -->
-            <div class="row">
-              <div class="col-lg-6">
+              You can read more about my pricing here including exceptions <a href="https://docs.google.com/document/d/1H6qdunomCo0WBUsJqI4x_UGn3TJmO5wwQZHbnDe-PNI/edit?usp=sharing" target="_blank">studio policies here</a>. <br><br>
+              30-minute lesson: $40<br> 45-minute lesson: $60<br> 60-minute lesson: $80 <br>
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </section><!-- End Lessons Section -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Gallery</h2>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/homestudio.JPG" class="img-fluid" alt="Home music studio for in-person lessons in Eugene, Oregon">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/homestudio.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="For in-person lessons, I teach in the focused environment of my home studio in Eugene, Oregon. Here, students have access to 10+ instruments, 30+ books, and 2 cool cats."><i class="bx bx-plus"></i></a>
               </div>
-              </ul>
             </div>
           </div>
-          <p>
-          </p>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cello1.jpeg" class="img-fluid" alt="Cello lessons in Eugene, Oregon">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cello1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Cello"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cello2.jpg" class="img-fluid" alt="Cello lessons in Eugene, Oregon">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cello2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Cello"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ukulele1.jpg" class="img-fluid" alt="Ukulele lessons in Eugene, Oregon">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/ukulele1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Ukulele"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ukulele2.jpg" class="img-fluid" alt="Ukulele lessons in Eugene, Oregon">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/ukulele2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Ukulele"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ukulele3.jpg" class="img-fluid" alt="Ukulele lessons in Eugene, Oregon">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/ukulele3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Ukulele"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/guitar1.jpg" class="img-fluid" alt="Guitar lessons in Eugene, Oregon">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/guitar1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Stained Glass Cello"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/guitar2.jpg" class="img-fluid" alt="Electric guitar lessons in Eugene, Oregon">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/guitar2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Electric Guitar"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
         </div>
+
       </div>
-    </section><!-- End Studio Section -->
-
-
-    <!-- ======= Studio Section =======
-    <section id="recitals" class="recitals">
-      <div class="container">
-        <div class="section-title">
-          <h2>Performance Opportunities</h2>
-          <p>
-            Whether you're a current student, a former student, or simply a friend or family member, I’m excited to invite you to Eliza Naomi’s Creative Circle – an open mic that celebrates all forms of creativity! Held on Zoom, this event is a unique opportunity to share whatever you’ve been working on, whether it’s a new song, a poem, a piece of visual art, or a story. The Creative Circle is all about self-expression in a relaxed, supportive setting.
-
-            It’s free to attend. This is a space where everyone can feel comfortable sharing their authentic selves, without the pressure of perfection. 
-
-            We will meet on the first Saturday of each month on this 
-
-            <a href="https://byui.zoom.us/j/4040793929" target="_blank">zoom link</a>. <br><br> 
-
-
-
-          </p> -->
-<!-- Responsive Container -->
-<!-- <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden; max-width: 100%; border: 0;">
-  <iframe 
-    src="https://calendar.google.com/calendar/embed?src=d9efc212f312681d51bb6b2c6c324d3b026e9d04f8652f13e48418176ffebc0c%40group.calendar.google.com&ctz=America%2FLos_Angeles&mode=AGENDA" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
-    frameborder="0" 
-    scrolling="no">
-  </iframe>
-</div> -->
-
-
-        </div>
-      </div>
-    </section><!-- End Studio Section -->
-
-
-    
-
-
+    </section><!-- End Portfolio Section -->
 
 
     <!-- ======= Contact Section ======= -->
-
     <section id="contact" class="contact">
       <div class="container">
 
@@ -312,7 +322,7 @@ One of my projects is Oregon Honeycomb, a trio featuring Hannah Sophia, Noah Tre
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>Eugene Oregon </p>
+                <p>Eugene, Oregon</p>
               </div>
 
               <div class="email">
@@ -327,8 +337,7 @@ One of my projects is Oregon Honeycomb, a trio featuring Hannah Sophia, Noah Tre
                 <p><a href="tel:+18594922500">(859) 492-2500</a></p>
               </div>
 
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91747.21218448668!2d-123.20495123482188!3d44.06063578946955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c119b0ac501919%3A0x57ec61894a43894d!2sEugene%2C%20OR!5e0!3m2!1sen!2sus!4v1726268278489!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe title="Map of Eugene, Oregon" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91747.21218448668!2d-123.20495123482188!3d44.06063578946955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c119b0ac501919%3A0x57ec61894a43894d!2sEugene%2C%20OR!5e0!3m2!1sen!2sus!4v1726268278489!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen loading="lazy"></iframe>
             </div>
 
           </div>
@@ -341,17 +350,17 @@ One of my projects is Oregon Honeycomb, a trio featuring Hannah Sophia, Noah Tre
                   <input type="text" name="name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
+                  <label for="email">Your Email</label>
                   <input type="email" class="form-control" name="email" id="email" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
+                <label for="subject">Subject</label>
                 <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -366,123 +375,70 @@ One of my projects is Oregon Honeycomb, a trio featuring Hannah Sophia, Noah Tre
         </div>
 
       </div>
-    </section>
-
-    <!-- End Contact Section -->
+    </section><!-- End Contact Section -->
 
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    <!-- ======= Music Section ======= -->
+    <section id="music" class="music">
       <div class="container">
+        <div class="row">
+          <!-- Image Column -->
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/band.png" class="img-fluid" alt="Oregon Honeycomb, an indie pop trio from Eugene, Oregon">
+          </div>
 
-        <div class="section-title">
-          <h2>Gallery</h2>
+          <!-- Content Column -->
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <div class="section-title">
+              <h2>My Music</h2>
+              <p>
+                I'm also an indie pop singer, songwriter, and multi-instrumentalist based in Eugene, Oregon. Making music and teaching it go hand in hand.
+              </p>
+
+              <p>
+                One of my projects is Oregon Honeycomb, a trio featuring Hannah Sophia, Noah Tretter, and Eliza Naomi. Check out our latest single here:
+              </p>
+              <iframe title="Oregon Honeycomb latest single on Spotify" style="border-radius:12px" src="https://open.spotify.com/embed/track/0l5MJ68oXH0YKEzHM1rba8?utm_source=generator" width="100%" height="80" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+              <!-- Trigger Button -->
+              <button id="openModal" style="margin-top: 15px; padding: 10px 20px; background-color: #039be5; color: white; border: none; border-radius: 5px; cursor: pointer;">Sign Up To Get Updates on My Music</button>
+
+              <!-- Modal Structure -->
+              <div id="formModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 700px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 1000;">
+                <button id="closeModal" style="float: right; background: transparent; border: none; font-size: 24px; padding: 10px; cursor: pointer;" aria-label="Close">&times;</button>
+                <iframe title="Mailing list sign up" src="https://mailchi.mp/752e50a7083e/landing-page" style="width: 100%; height: 600px; border: none;"></iframe>
+              </div>
+
+              <!-- Overlay -->
+              <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999;"></div>
+
+              <script>
+                document.getElementById('openModal').addEventListener('click', function () {
+                  document.getElementById('formModal').style.display = 'block';
+                  document.getElementById('overlay').style.display = 'block';
+                });
+
+                document.getElementById('closeModal').addEventListener('click', function () {
+                  document.getElementById('formModal').style.display = 'none';
+                  document.getElementById('overlay').style.display = 'none';
+                });
+
+                document.getElementById('overlay').addEventListener('click', function () {
+                  document.getElementById('formModal').style.display = 'none';
+                  document.getElementById('overlay').style.display = 'none';
+                });
+              </script>
+            </div>
+          </div>
         </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <!--             </ul> -->
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/homestudio.JPG" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/homestudio.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="        For in-person lessons, I teach in the focused environment of my home studio in Eugene, Oregon. Here, students have access to 10+ instruments, 30+ books, and 2 cool cats."><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/cello1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/cello1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="ukulele"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/cello2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/cello2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="ukulele"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/ukulele1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/ukulele1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="ukulele"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/ukulele2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/ukulele2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Cello"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/ukulele3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/ukulele3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Cello"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/guitar1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/guitar1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Stained Glass Cello"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/guitar2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/guitar2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Electric Guitar"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
-
-
+    </section><!-- End Music Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <!-- <div class="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
-      </div> -->
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
@@ -517,7 +473,6 @@ One of my projects is Oregon Honeycomb, a trio featuring Hannah Sophia, Noah Tre
       const form = this;
       const formData = new FormData(form);
       const submitButton = form.querySelector('button[type="submit"]');
-      const sentMessage = form.querySelector('.sent-message');
       const errorMessage = form.querySelector('.error-message');
       const loading = form.querySelector('.loading');
 
@@ -559,26 +514,6 @@ One of my projects is Oregon Honeycomb, a trio featuring Hannah Sophia, Noah Tre
           submitButton.disabled = false;
         });
     });
-
-    // Open Modal
-document.getElementById('openModal').addEventListener('click', function() {
-  document.getElementById('formModal').style.display = 'block';
-  document.getElementById('overlay').style.display = 'block';
-});
-
-// Close Modal
-document.getElementById('closeModal').addEventListener('click', function() {
-  document.getElementById('formModal').style.display = 'none';
-  document.getElementById('overlay').style.display = 'none';
-});
-
-// Close Modal when clicking outside
-document.getElementById('overlay').addEventListener('click', function() {
-  document.getElementById('formModal').style.display = 'none';
-  document.getElementById('overlay').style.display = 'none';
-});
-
-
   </script>
 </body>
 
