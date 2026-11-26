@@ -229,8 +229,16 @@ h6 {
   min-height: 100vh;
   background: url("../img/hero-bg.jpg") right center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: right center; /* Ensures left side is prioritized */
+  background-position: right center;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    background-image: url("../img/hero-bg-mobile.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+  }
 }
 
 #hero:before {
